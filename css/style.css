@@ -1,0 +1,279 @@
+/*BASE STYLE SECTION*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: #2A3439;
+    color: #ccc;
+}
+header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+section {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #1F262A;
+}
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    box-shadow: 7.3px 14.6px 14.6px hsl(0deg 0% 0% / 0.27)
+}
+
+main {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    padding: 5rem;
+    max-width: 100vw;
+    min-height: 90vh;
+}
+footer {
+    grid-row: 4/5;
+    grid-column: 1/2;
+
+}
+footer a {
+    color: black;
+}
+
+nav a {
+    display: block;
+    float:left;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+    transition: 1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* WRAPPER STYLE SECTION*/
+.grid-wrapper {
+    display: grid;
+    max-width: 100%;
+}
+.footer-wrap {
+    background-color: #5B676D;
+    line-height: 2rem;
+    padding: 4rem;
+    text-align: center;
+}
+
+/* FLEX-GALLERY (home & projects) STYLE SECTION*/
+.flex-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-item-home {
+    margin: 5px;
+    height: auto;
+    box-shadow: 7.3px 14.6px 14.6px hsl(0deg 0% 0% / 0.27);
+    max-width: 100%;
+}
+.flex-it-project {
+    border: white solid 2px;
+    max-width: 100%;
+    height: auto;
+}
+
+/*FOOTER ICONS*/
+
+.fa {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+.fa-instagram {
+background: #881253;
+color: white;
+}
+
+/* TEXT STYLE SECTION*/
+.uppercase {
+    text-transform: uppercase;
+}
+.text-header-home {
+    text-align:left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: xx-large;
+}
+.text-center {
+    max-width: 100%;
+    text-align: center;
+    line-height: 7vh; 
+    font-size: 20px;
+}
+.text-description {
+    text-align: left;
+    line-height: 5vh;
+}
+.logo-header {
+    display:inline;
+    float: right;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* SPECIAL STYLES*/
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/lian.jpg);    
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    color: whitesmoke;
+    background-attachment: fixed;
+}
+.contact-wrap {
+    max-width: 100vw;
+}
+.contact-content-file {
+    border-radius: 5px;
+    background-color: rgb(94, 118, 119);
+    padding: 1rem;
+    max-width: 100%;
+    width: 50%;
+}
+.contact-form {
+    margin: 30px;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: rgb(86, 153, 158);
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.feature-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 7.3px 14.6px 14.6px hsl(0deg 0% 0% / 0.27)
+}
+
+/*5 SMALLER PROJECT STYLE SECTION*/
+.small-proj-wrap {
+    background-color: coral;
+}
+.small-proj-section {
+    background-color:#FFB085;
+    color: black;
+    border: #FF5C58 solid;
+    padding: 1rem;
+}
+.small-proj-content {
+    color: black;
+}
+.small-proj-footer {
+    background-color: #FFB085;
+    color: black;
+}
+.small-proj-images {
+    object-fit: cover;
+    width: 30%;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 480px) {
+    header {
+        width: 100%;
+    }
+    main {
+        padding: 10px;
+    }
+    section img {
+        width: 90%
+    } 
+    .small-proj-images {
+        width: 100%;
+    }
+    .contact-content-file {
+        width: 100%;
+    }
+    .feature-photo {
+        width: 100%;
+    }
+    .logo-header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        width: 100%;
+    }
+    main {
+        padding: 10px;
+    }
+    footer {
+        height: 30vh;
+    }
+    section img {
+        width: 100%
+    } 
+    .small-proj-images {
+        width: 100%;
+    }
+    .contact-content-file {
+        width: 100%;
+    }
+    .feature-photo {
+        width: 100%;
+    }
+}
+
+/*check the media query for tablet, try the min-width:600px, see if it works.*/
