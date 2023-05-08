@@ -7,9 +7,9 @@ It is a webpage that shows different images in a gallery.
 
 ### Why is the project useful?
 It is useful in a way that I have learned about how to use basic HTML and CSS.
-
+<!-- 
 ### How can users get started with the project?
 
 ### Where can users get help with this project?
 
-### Who maintains and contributes to the project? 
+### Who maintains and contributes to the project?  -->
